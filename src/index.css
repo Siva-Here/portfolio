@@ -1,13 +1,128 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+img{
+  width: 70%;
+  height: 70%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+section{
+  padding: 60px 0;
+}
+
+.shadow{
+  text-shadow: 2px 2px 3px whitesmoke;
+}
+.shadow:hover{
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
+
+@keyframes twistText {
+  0% {
+    transform: perspective(500px) rotateX(0deg); /* Start from no rotation */
+  }
+  100% {
+    transform: perspective(500px) rotateX(360deg); /* End at one full twist */
+  }
+}
+
+.custom-shadow{
+  text-shadow: 2px 0px 0.8px whitesmoke;
+  display: inline-block;
+  animation: twistText 5s linear infinite; /* Adjust the animation duration (5s in this example) */
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide the overflow text */
+}
+
+
+.nav-link:hover{
+  border-radius: 20%;
+  /* text-shadow: 10px 10px 20px rgba(255, 255, 255, 0.8); */
+  text-shadow: 1px 1px 1px whitesmoke;
+  
+}
+
+
+li{
+  list-style: none;
+  margin-top: 15px;
+  opacity: 0.7;
+  font-weight: bold;
+}
+li:hover{
+  transform: scale(1);
+  transition: 0.5s ease-in-out;
+  /* text-shadow: 1px 1px 1px whitesmoke; */
+}
+.meow{
+  background: rgba( 255, 255, 255, 0 );
+  box-shadow: 0 8px 32px 0 rgba(135, 31, 116, 0.57);
+  backdrop-filter: blur( 0px );
+  -webkit-backdrop-filter: blur( 0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border-bottom: 1px solid rgba(237, 7, 253, 0.341);
+}
+h1 .meow{
+  border-radius: 30px;
+}
+
+.skill-list li:hover{
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+
+}
+
+/* styles.css */
+.custom-button {
+  color: white;
+  background-color: #ff5733; /* Your desired background color */
+  border-color: #ff5733; /* Your desired border color */
+}
+
+.custom-button:hover {
+  background-color: #cc4500; /* Your desired hover background color */
+  border-color: #cc4500; /* Your desired hover border color */
+}
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 50px;
+  row-gap: 50px;
+}
+
+.card:hover{
+  transform: scale(1.05);
+  transition: 0.5s ease-in-out;
+}
+
+/* #projectCards .meow{
+  border-radius: 30px;
+} */
+.visit{
+ background-color: black;
+ border: 2px solid purple;
+ color: cyan;
+ border-radius: 5px;
+ padding: 5px 20px;
+}
+.visit:hover{
+  background-color: purple;
+  border: 2px solid black;
+  color: black;
+ }
+
+button .nav-bar-toggler{
+  border: 2px solid purple;
+}
+.imageHover:hover{
+  transform: scale(1.05);
+  transition: 0.4s ease-in-out;
+}
+
+/* SKILL */
+.skillHover{
+  margin-bottom: 30px;
+}
+.skillHover:hover{
+  transform: scale(1.1);
+  transition: 0.2s ease-in-out;
 }
